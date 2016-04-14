@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptopals", "cryptopals\cryptopals.csproj", "{7C25E5A0-129E-4DE0-A475-A4C21DA8724E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptopals-tests", "cryptopals-tests\cryptopals-tests.csproj", "{1994E23C-1730-471F-AFA9-6CDAE9295F0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C25E5A0-129E-4DE0-A475-A4C21DA8724E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C25E5A0-129E-4DE0-A475-A4C21DA8724E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C25E5A0-129E-4DE0-A475-A4C21DA8724E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C25E5A0-129E-4DE0-A475-A4C21DA8724E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1994E23C-1730-471F-AFA9-6CDAE9295F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1994E23C-1730-471F-AFA9-6CDAE9295F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1994E23C-1730-471F-AFA9-6CDAE9295F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1994E23C-1730-471F-AFA9-6CDAE9295F0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
