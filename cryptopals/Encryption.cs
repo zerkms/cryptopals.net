@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics.Contracts;
 using System.Linq;
+using System.Security.Cryptography;
 
 namespace Cryptopals
 {
@@ -98,6 +99,26 @@ namespace Cryptopals
 
             Contract.Assume(scoredCandidates.Any());
             return scoredCandidates.First();
+        }
+
+        static public byte[] AESECB(byte[] key, byte[] message)
+        {
+            Contract.Requires(message != null);
+            Contract.Requires(key != null);
+            Contract.Ensures(Contract.Result<byte[]>() != null);
+
+            var aes = new AesManaged
+            {
+                KeySize = 128,
+                Key = key,
+                BlockSize = 128,
+                Mode = CipherMode.ECB,
+                IV = new byte[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+            };
+
+            var decryptor = aes.CreateDecryptor(aes.Key, aes.IV);
+
+            return decryptor.TransformFinalBlock(message, 0, message.Length);
         }
     }
 }
